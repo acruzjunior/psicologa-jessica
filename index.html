@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jéssica Bianca Coutinho - Psicóloga online e presencial</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fff5f5;
+      color: #333;
+    }
+    .nav-link {
+      transition: color 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #db2777;
+    }
+    section {
+      scroll-margin-top: 80px;
+    }
+    .button {
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .button:hover {
+      background-color: #be185d;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="antialiased">
+  <header class="bg-pink-100 shadow fixed w-full top-0 z-10">
+    <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-pink-800">Jéssica Bianca Coutinho</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#sobre" class="nav-link text-pink-700 font-medium">Sobre mim</a></li>
+          <li><a href="#atendimento" class="nav-link text-pink-700 font-medium">Como funciona</a></li>
+          <li><a href="#temas" class="nav-link text-pink-700 font-medium">Temas atendidos</a></li>
+          <li><a href="#agendar" class="nav-link text-pink-700 font-medium">Agendar sessão</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-24 max-w-5xl mx-auto px-4">
+    <section class="text-center mb-12">
+      <h2 class="text-3xl font-semibold text-pink-800">Psicóloga online e presencial</h2>
+      <p class="text-lg mt-2 italic text-gray-600">“Às vezes, o primeiro passo é apenas conversar com alguém que te escuta de verdade.”</p>
+    </section>
+
+    <section id="sobre" class="mb-12">
+      <img src="WhatsApp Image 2025-08-07 at 10.54.42 (1).jpg" alt="Foto de Jéssica Bianca Coutinho" class="max-w-xs mb-4 float-left mr-4">
+      <h2 class="text-2xl font-semibold text-pink-800">Sobre mim</h2>
+      <p class="mt-4">Psicóloga | CRP 220652</p>
+      <p class="mt-2">Sou psicóloga formada com atuação focada na Terapia Cognitivo-Comportamental (TCC). Atendo adultos e adolescentes em busca de mais clareza, equilíbrio emocional e bem-estar.</p>
+      <p class="mt-2">Acredito na escuta empática, no acolhimento sem julgamentos e no potencial de cada pessoa para construir mudanças reais em sua vida.</p>
+      <div class="mt-4 flex justify-center space-x-4">
+        <a href="https://wa.me/5512988656327" class="button bg-pink-600 text-white px-6 py-2 rounded-md" target="_blank">📱 Fale comigo no WhatsApp</a>
+        <a href="mailto:psi.jbcoutinho@gmail.com" class="button bg-pink-600 text-white px-6 py-2 rounded-md">📧 Enviar e-mail</a>
+      </div>
+    </section>
+
+    <section id="atendimento" class="mb-12">
+      <h2 class="text-2xl font-semibold text-pink-800">Como funciona o atendimento</h2>
+      <ul class="mt-4 list-none space-y-2">
+        <li>Sessões individuais por videochamada ou presencial</li>
+        <li>Duração: 50 minutos</li>
+        <li>Frequência semanal (ou conforme a sua necessidade)</li>
+        <li>Sigilo absoluto e ambiente seguro</li>
+        <li>Plataformas para online: Google Meet ou Zoom</li>
+      </ul>
+    </section>
+
+    <section id="temas" class="mb-12">
+      <h2 class="text-2xl font-semibold text-pink-800">Temas atendidos</h2>
+      <ul class="mt-4 list-none space-y-2">
+        <li>🧠 Ansiedade</li>
+        <li>🪞 Autoestima</li>
+        <li>💼 Estresse e sobrecarga</li>
+        <li>💔 Relacionamentos</li>
+        <li>🌧 Luto e perdas</li>
+        <li>🔍 Autoconhecimento</li>
+      </ul>
+      <p class="mt-4 italic text-gray-600">(Se você não sabe por onde começar, tudo bem. A gente descobre juntas.)</p>
+    </section>
+
+    <section id="agendar" class="mb-12">
+      <h2 class="text-2xl font-semibold text-pink-800">Agendar sessão</h2>
+      <p class="mt-4">📆 Para agendar sua primeira conversa, clique no botão abaixo:</p>
+      <a href="https://wa.me/5512988656327" class="button bg-pink-600 text-white px-6 py-2 rounded-md inline-block mt-4" target="_blank">👉 Fale comigo no WhatsApp</a>
+      <p class="mt-4">Se quiser entender melhor como funciona, estou disponível para tirar suas dúvidas sem compromisso.</p>
+    </section>
+  </main>
+
+  <footer class="bg-pink-100 py-6 text-center">
+    <p>Jéssica Bianca Coutinho – Psicóloga | CRP 220652</p>
+    <p>💻 Atendimento psicológico online e presencial</p>
+    <p>📍 Atendimentos em todo o Brasil</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.nav-link').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
